@@ -1,4 +1,5 @@
 *******************************************************************************************************
+			      Projet réalisé dans le cadre de mes études
 *******************************************************************************************************
 Ce projet d’informatique a consisté à programmer en C les différentes parties qui composent 
 la compilation d’un code en grafcet.
