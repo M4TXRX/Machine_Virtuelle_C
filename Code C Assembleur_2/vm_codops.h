@@ -1,0 +1,16 @@
+#define OP_HALT 1000
+#define OP_PUSHI        100
+#define OP_PUSH         200
+#define OP_POP          300
+#define OP_PLUS         400
+#define OP_MOINS        401
+#define OP_MULT         402
+#define OP_DIV          403
+#define OP_AND          404
+#define OP_OR           405
+#define OP_NOT          406
+#define OP_EQ           407
+#define OP_GT           408
+#define OP_LT           409
+#define OP_JZ           500
+#define OP_JP           501 
