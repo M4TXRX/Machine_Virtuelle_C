@@ -7,7 +7,7 @@ Cette méthode d'interpretation de code est utilisé par Java par le biais de sa
 Vous pouvez avoir davantage de détails sur le fonctionnement de la machine virtuelle de java ici :
 https://www.isnbreizh.fr/nsi/activity/interpreter/index.html
 			ou
-https://www.isnbreizh.fr/nsi/activity/interpreter/index.html
+https://soat.developpez.com/tutoriels/java/jvm/decouverte-machine-virtuelle-java/?page=intro-jvm
 
 En l’occurrence ici nous nous intéressons au grafcet d’un coffre-fort qui en fonction des différentes 
 combinaisons qui lui sont mises en entrée, passe ou non d’une étape à l’autre dans le grafcet. Ce grafcet 
