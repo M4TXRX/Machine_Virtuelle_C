@@ -44,26 +44,53 @@ _C'est en quelque sorte une référence pour voir si nous avons réussi à obten
 		```
 		$ gcc -o grafcet_safe grafcet_safe.c
 		```
-* Le compilateur creera un fichier executable grafcet
+* Le compilateur créera un fichier executable grafcet.
 	- Pour lancer le programme et tester les instruction du fichier stimuli.txt, tapez :
 		```
 		$ ./grafcet_safe stimuli.txt
 		```
+
 
 ##### Allez dans le répertoire "Code C Compilateur_1" :
 _Le code du compilateur "arbre.c" n'est pas totalement abouti, mais les bases pour comprendre le fonctionnement de cette partie sont bien expliquées. Je vous invite à lire attentivemen la partie "IV) Le programme du compilateur" du rapport "Rapport_projet.pdf" si vous souhaitez le terminer._
 
 * Pour compiler le fichier arbre.c :
 		```
-		$ gcc -o grafcet_safe arbre.c
+		$ gcc -o arbre arbre.c
 		```
-* Le compilateur creera un fichier executable arbre
+* Le compilateur créera un fichier executable arbre.
 	- Pour lancer le programme tapez :
 		```
 		$ ./arbre 
 		```
-_Pour l'instant j'ai écrit directement dans le main la lecture de la première ligne "E0=1 & bp=0 & pot > 128" du fichier "safe.grafcet". Il reste donc à lire chaque ligne de ce fichier et de créer les test condionnels nécessaires afin de créer les noeuds attendus._
+_Pour l'instant j'ai écrit directement dans le main la lecture de la première ligne "E0=1 & bp=0 & pot > 128" du fichier "safe.grafcet". Il reste donc à lire chaque ligne de ce fichier et de créer les test condionnels nécessaires afin de créer les noeuds attendus. Il est attendu un fichier "safe.asm" en sortie qui sera ensuite lu par le partie code assembleur présentée ci-dessous. _
 
 
 
+##### Allez dans le répertoire "Code C Assembleur_2" :
 
+* Pour compiler le fichier ASM.c :
+		```
+		$ gcc -o main_ASM ASM.c vm_codops.h
+		```
+* Le compilateur créera un fichier executable ASM.
+	- Pour lancer le programme tapez :
+		```
+		$ ./main_ASM safe.asm
+		```	
+_ Il est attendu un fichier "safe.bin" en sortie qui sera ensuite lu par le partie code machie virtuelle présentée ci-dessous. _	
+
+##### Allez dans le répertoire "Code C VM_3" :
+
+* Pour compiler le fichier ASM.c :
+		```
+		$ gcc -o VM VM.c 
+		```
+* Le compilateur créera un fichier executable VM qui ira lire le fichier "safe.bin".
+	- Pour lancer le programme tapez :
+		```
+		$ ./VM
+		```
+		
+
+_ Les instructions du fichier bytecode sont ensuite interprétées et affichées sur le terminal. _
