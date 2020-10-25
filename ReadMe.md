@@ -63,7 +63,7 @@ _Le code du compilateur "arbre.c" n'est pas totalement abouti, mais les bases po
 		```
 		$ ./arbre 
 		```
-_Pour l'instant j'ai écrit directement dans le main la lecture de la première ligne "E0=1 & bp=0 & pot > 128" du fichier "safe.grafcet". Il reste donc à lire chaque ligne de ce fichier et de créer les test condionnels nécessaires afin de créer les noeuds attendus. Il est attendu un fichier "safe.asm" en sortie qui sera ensuite lu par le partie code assembleur présentée ci-dessous. _
+_Pour l'instant j'ai écrit directement dans le main la lecture de la première ligne "E0=1 & bp=0 & pot > 128" du fichier "safe.grafcet". Il reste donc à lire chaque ligne de ce fichier et de créer les test condionnels nécessaires afin de créer les noeuds attendus. Il est attendu un fichier "safe.asm" en sortie qui sera ensuite lu par le partie code assembleur présentée ci-dessous._
 
 
 
@@ -78,7 +78,7 @@ _Pour l'instant j'ai écrit directement dans le main la lecture de la première 
 		```
 		$ ./main_ASM safe.asm
 		```	
-_ Il est attendu un fichier "safe.bin" en sortie qui sera ensuite lu par le partie code machie virtuelle présentée ci-dessous. _	
+_Il est attendu un fichier "safe.bin" en sortie qui sera ensuite lu par le partie code machie virtuelle présentée ci-dessous._	
 
 ##### Allez dans le répertoire "Code C VM_3" :
 
@@ -93,4 +93,4 @@ _ Il est attendu un fichier "safe.bin" en sortie qui sera ensuite lu par le part
 		```
 		
 
-_ Les instructions du fichier bytecode sont ensuite interprétées et affichées sur le terminal. _
+_Les instructions du fichier bytecode sont ensuite interprétées et affichées sur le terminal._
