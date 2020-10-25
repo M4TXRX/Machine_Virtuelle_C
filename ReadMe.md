@@ -3,8 +3,8 @@
 * [Setup](#setup)
 
 ## General info 
-Ce projet d’informatique a consisté à programmer en C les différentes parties qui composent 
-la compilation d’un code en grafcet.
+Ce projet d’informatique a consisté à créer les éléments nécessaire à la compilation et l'interprétation
+de notre propre langage de programmation (très basique).
 Cette méthode d'interpretation de code est utilisé par Java par le biais de sa machine virtuelle.
 Vous pouvez avoir davantage de détails sur le fonctionnement de la machine virtuelle de java ici :
 
@@ -14,8 +14,8 @@ Vous pouvez avoir davantage de détails sur le fonctionnement de la machine virt
 
 En l’occurrence ici nous nous intéressons au grafcet d’un coffre-fort qui en fonction des différentes 
 combinaisons qui lui sont mises en entrée, passe ou non d’une étape à l’autre dans le grafcet.
-Nous aurons donc dans notre fichier "safe.grafcet" notre propre langage de programmation (avec comme extension du fichier à compiler ".grafcet")
-très basique qui sera ensuite interprété par notre machine virtuelle.
+Nous aurons donc dans notre fichier "safe.grafcet", notre propre langage de programmation (avec comme extension du fichier à compiler ".grafcet")
+très basique. Celui-ci sera ensuite interprété par notre machine virtuelle.
 Notre code grafcet peut être comparé au code java qui est interprété ensuite par la machine virtuelle java une fois compilé.
 C'est pourquoi java fonctionne sur toutes les plateformes. Il suffit seulement que la machine virtuelle soit programmée dans 
 un langage compris par l'OS sur laquelle elle tourne.
