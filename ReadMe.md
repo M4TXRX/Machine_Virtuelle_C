@@ -82,7 +82,7 @@ _Il est attendu un fichier "safe.bin" en sortie qui sera ensuite lu par le parti
 
 ##### Allez dans le répertoire "Code C VM_3" :
 
-* Pour compiler le fichier ASM.c :
+* Pour compiler le fichier VM.c :
 		```
 		$ gcc -o VM VM.c 
 		```
