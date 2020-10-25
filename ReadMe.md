@@ -8,7 +8,9 @@ Ce projet d’informatique a consisté à programmer en C les différentes parti
 la compilation d’un code en grafcet.
 Cette méthode d'interpretation de code est utilisé par Java par le biais de sa machine virtuelle.
 Vous pouvez avoir davantage de détails sur le fonctionnement de la machine virtuelle de java ici :
+
 https://www.isnbreizh.fr/nsi/activity/interpreter/index.html
+
 			ou
 https://soat.developpez.com/tutoriels/java/jvm/decouverte-machine-virtuelle-java/?page=intro-jvm
 
