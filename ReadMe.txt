@@ -1,6 +1,9 @@
-*******************************************************************************************************
-			      Projet réalisé dans le cadre de mes études
-*******************************************************************************************************
+## Table of contents
+* [General info](#general-info)
+* [Setup](#setup)
+* [Tree structure](#tree-structure)
+
+## General info 
 Ce projet d’informatique a consisté à programmer en C les différentes parties qui composent 
 la compilation d’un code en grafcet.
 Cette méthode d'interpretation de code est utilisé par Java par le biais de sa machine virtuelle.
@@ -24,8 +27,30 @@ entrée du compilateur. Dans un premier temps nous avons donc eu à programmer u
 et enfin un compilateur. Nous avons donc fait les étapes de traitement du fichier grafcet à l’envers.
 
 Référez-vous au "Rapport_projet.pdf" pour comprendre plus en détail le fonctionnement de ce projet.
+	
+## Setup
 
-/!\Le dossier "Code C Grafcet_0" est seulement le code C du grafcet qui est attendu en sortie de notre machine virtuelle./!\
-/!\C'est en quelque sorte une référence pour voir si nous avons réussi à obtenir la même chose que le code en C avec la machine virtuelle./!\
-*******************************************************************************************************
-*******************************************************************************************************
+Allez dans le répertoire "code_c" :
+
+* Pour compiler le fichier UdpClient.c :
+		```
+		$ gcc -o client UdpClient.c
+		```
+* Le compilateur creera un fichier executable client
+	- Pour lancer le programme tapez :
+		```
+		$ ./client 127.0.0.1 8881 events.txt
+		```
+		!! Avec le fichier events.txt (contenant les pointages du gardien qui fait sa ronde) dans le dossier ou se trouve le programme
+		
+		!! Pour lancer toutes les requêtes du client rapidement restez appuyer sur la touche ENTER
+
+* Pour compiler le fichier UdpServer.c :
+		```
+		$ gcc -o server UdpServer.c `mysql_config --cflags --libs`
+		```
+* Le compilateur creera un fichier executable server
+	- Pour lancer le programme tapez :
+		```
+		$ ./server 8881
+		```
