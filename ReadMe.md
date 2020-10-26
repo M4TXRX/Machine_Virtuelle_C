@@ -73,7 +73,7 @@ _Pour l'instant j'ai écrit directement dans le main la lecture de la première 
 		```
 		$ gcc -o main_ASM ASM.c vm_codops.h
 		```
-* Le compilateur créera un fichier executable ASM.
+* Le compilateur créera un fichier executable ASM, auquel il faut spécifier le fichier qu'il prend en entré "safe.asm".
 	- Pour lancer le programme tapez :
 		```
 		$ ./main_ASM safe.asm
